@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater Photo Color Correction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        canvas {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Underwater Photo Color Correction</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="range" id="colorAdjustSlider" min="0" max="100" value="50">
+    <canvas id="photoCanvas"></canvas>
+
+    <script src="colorAdjust.js"></script>
+</body>
+</html>
